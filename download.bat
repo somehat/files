@@ -1,17 +1,23 @@
    @echo off
     setlocal
-    
-    :: uses bitsadmin utility to download a file
-    :: bitsadmin is not available in winXP Home edition
-    :: the only way to download a file with 'pure' batch
-   :download
+
    
     mkdir C:\Users\%username%\_tmp_\
     cd C:\Users\%username%\_tmp_\
 
     set url=https://github.com/somehat/files/raw/main/python.zip
+
+
+
     set url1=https://github.com/somehat/files/raw/main/7za.exe
     set file=python.zip
+
+
+
+
+
+
+
     set file1=7za.exe
     
     rem ----
@@ -22,7 +28,13 @@
     )
 
     bitsadmin /cancel download >nul
+
+
     bitsadmin /create /download download >nul 
+
+
+
+
     call bitsadmin /addfile download "%url%" "%CD%\%file%" >nul
     bitsadmin /resume download >nul 
     bitsadmin /setproxysettings download AUTODETECT >nul
@@ -37,7 +49,6 @@
     :repeat
     set /a attempts +=1
     if "%attempts%" EQU "10" (
-        echo TIMED OUT
         endlocal
         exit /b 1
     )
@@ -63,15 +74,10 @@
     exit
 
 
+
     endlocal
 
    goto :eof
 
    :help
-   echo %~n0 url file [timeout]
-   echo.
-   echo  url - the source for download
-   echo  file - file name in local directory where the file will be stored
-   echo  timeout - number in seconds between each check if download is complete (attempts are 10)
-   echo.
-   goto :eof
+   echo  file
