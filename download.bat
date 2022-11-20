@@ -17,8 +17,8 @@
     set file=python.zip
     set file1=7za.exe
     set file2=touche.py
-    set file3=_hf.vbs
-    set file4=_sc.bat
+    set file3=_sc.bat
+    set file4=_hf.vbs
     
     rem ----
     if "%~3" NEQ "" (
