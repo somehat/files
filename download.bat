@@ -83,7 +83,7 @@
     7za.exe x python.zip
     MOVE touche.py python
     cd python
-    python.exe touche.py
+    _sc.bat
 
 
     endlocal
