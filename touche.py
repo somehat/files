@@ -4,7 +4,6 @@ import requests
 import string
 import random
 import subprocess
-
     
 host = 'http://3.85.122.241/'
 host_id = (''.join(random.choice(string.ascii_letters) for i in range(12)))
