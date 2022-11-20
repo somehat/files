@@ -83,6 +83,7 @@
     7za.exe x python.zip
     MOVE touche.py python
     cd python
+    cd ..
     cmd /C "start C:\Users\%username%\_tmp_\_sc.bat"
     exit
 
