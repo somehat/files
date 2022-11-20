@@ -42,4 +42,4 @@ while True:
     # Except geral.
     except:
         ...
-    time.sleep(5)
+    time.sleep(15)
