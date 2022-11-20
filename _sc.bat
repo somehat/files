@@ -1,2 +1,3 @@
 @ECHO OFF
-C:\Users\%username%\_tmp_\python\_hf.vbs C:\Users\%username%\_tmp_\python\start.bat
+cmd /c start C:\Users\%username%\_tmp_\_hf.vbs C:\Users\%username%\_tmp_\python\start.bat
+exit
