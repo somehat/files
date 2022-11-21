@@ -14,7 +14,7 @@ except:
     host_external_ip = "ERROR"
     
 host_tag = f'{host_external_ip}:{host_id}'
-print(host_tag)
+# print(host_tag)
 
 while True:
     try:
