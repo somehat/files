@@ -1,1 +1,1 @@
-mkdir teste
+mkdir c:/users/user/desktop/teste
